@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3847539023AC0A2D004D36FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847538F23AC0A2D004D36FE /* AppDelegate.swift */; };
+		3847539223AC0A2D004D36FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847539123AC0A2D004D36FE /* SceneDelegate.swift */; };
+		3847539523AC0A2D004D36FE /* RiftRaider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3847539323AC0A2D004D36FE /* RiftRaider.xcdatamodeld */; };
+		3847539723AC0A2D004D36FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847539623AC0A2D004D36FE /* ContentView.swift */; };
+		3847539923AC0A2E004D36FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3847539823AC0A2E004D36FE /* Assets.xcassets */; };
+		3847539C23AC0A2E004D36FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3847539B23AC0A2E004D36FE /* Preview Assets.xcassets */; };
+		3847539F23AC0A2E004D36FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3847539D23AC0A2E004D36FE /* LaunchScreen.storyboard */; };
+		384753AA23AC0A2E004D36FE /* RiftRaiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384753A923AC0A2E004D36FE /* RiftRaiderTests.swift */; };
+		384753B523AC0A2E004D36FE /* RiftRaiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384753B423AC0A2E004D36FE /* RiftRaiderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		384753A623AC0A2E004D36FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3847538423AC0A2C004D36FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847538B23AC0A2C004D36FE;
+			remoteInfo = RiftRaider;
+		};
+		384753B123AC0A2E004D36FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3847538423AC0A2C004D36FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847538B23AC0A2C004D36FE;
+			remoteInfo = RiftRaider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3847538C23AC0A2C004D36FE /* RiftRaider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiftRaider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3847538F23AC0A2D004D36FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3847539123AC0A2D004D36FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3847539423AC0A2D004D36FE /* RiftRaider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RiftRaider.xcdatamodel; sourceTree = "<group>"; };
+		3847539623AC0A2D004D36FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3847539823AC0A2E004D36FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3847539B23AC0A2E004D36FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3847539E23AC0A2E004D36FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		384753A023AC0A2E004D36FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384753A523AC0A2E004D36FE /* RiftRaiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiftRaiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384753A923AC0A2E004D36FE /* RiftRaiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiftRaiderTests.swift; sourceTree = "<group>"; };
+		384753AB23AC0A2E004D36FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384753B023AC0A2E004D36FE /* RiftRaiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiftRaiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384753B423AC0A2E004D36FE /* RiftRaiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiftRaiderUITests.swift; sourceTree = "<group>"; };
+		384753B623AC0A2E004D36FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3847538923AC0A2C004D36FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384753A223AC0A2E004D36FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384753AD23AC0A2E004D36FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3847538323AC0A2C004D36FE = {
+			isa = PBXGroup;
+			children = (
+				3847538E23AC0A2C004D36FE /* RiftRaider */,
+				384753A823AC0A2E004D36FE /* RiftRaiderTests */,
+				384753B323AC0A2E004D36FE /* RiftRaiderUITests */,
+				3847538D23AC0A2C004D36FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3847538D23AC0A2C004D36FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3847538C23AC0A2C004D36FE /* RiftRaider.app */,
+				384753A523AC0A2E004D36FE /* RiftRaiderTests.xctest */,
+				384753B023AC0A2E004D36FE /* RiftRaiderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3847538E23AC0A2C004D36FE /* RiftRaider */ = {
+			isa = PBXGroup;
+			children = (
+				3847538F23AC0A2D004D36FE /* AppDelegate.swift */,
+				3847539123AC0A2D004D36FE /* SceneDelegate.swift */,
+				3847539623AC0A2D004D36FE /* ContentView.swift */,
+				3847539823AC0A2E004D36FE /* Assets.xcassets */,
+				3847539D23AC0A2E004D36FE /* LaunchScreen.storyboard */,
+				384753A023AC0A2E004D36FE /* Info.plist */,
+				3847539323AC0A2D004D36FE /* RiftRaider.xcdatamodeld */,
+				3847539A23AC0A2E004D36FE /* Preview Content */,
+			);
+			path = RiftRaider;
+			sourceTree = "<group>";
+		};
+		3847539A23AC0A2E004D36FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3847539B23AC0A2E004D36FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		384753A823AC0A2E004D36FE /* RiftRaiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				384753A923AC0A2E004D36FE /* RiftRaiderTests.swift */,
+				384753AB23AC0A2E004D36FE /* Info.plist */,
+			);
+			path = RiftRaiderTests;
+			sourceTree = "<group>";
+		};
+		384753B323AC0A2E004D36FE /* RiftRaiderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				384753B423AC0A2E004D36FE /* RiftRaiderUITests.swift */,
+				384753B623AC0A2E004D36FE /* Info.plist */,
+			);
+			path = RiftRaiderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3847538B23AC0A2C004D36FE /* RiftRaider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384753B923AC0A2E004D36FE /* Build configuration list for PBXNativeTarget "RiftRaider" */;
+			buildPhases = (
+				3847538823AC0A2C004D36FE /* Sources */,
+				3847538923AC0A2C004D36FE /* Frameworks */,
+				3847538A23AC0A2C004D36FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RiftRaider;
+			productName = RiftRaider;
+			productReference = 3847538C23AC0A2C004D36FE /* RiftRaider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		384753A423AC0A2E004D36FE /* RiftRaiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384753BC23AC0A2E004D36FE /* Build configuration list for PBXNativeTarget "RiftRaiderTests" */;
+			buildPhases = (
+				384753A123AC0A2E004D36FE /* Sources */,
+				384753A223AC0A2E004D36FE /* Frameworks */,
+				384753A323AC0A2E004D36FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384753A723AC0A2E004D36FE /* PBXTargetDependency */,
+			);
+			name = RiftRaiderTests;
+			productName = RiftRaiderTests;
+			productReference = 384753A523AC0A2E004D36FE /* RiftRaiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		384753AF23AC0A2E004D36FE /* RiftRaiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384753BF23AC0A2E004D36FE /* Build configuration list for PBXNativeTarget "RiftRaiderUITests" */;
+			buildPhases = (
+				384753AC23AC0A2E004D36FE /* Sources */,
+				384753AD23AC0A2E004D36FE /* Frameworks */,
+				384753AE23AC0A2E004D36FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384753B223AC0A2E004D36FE /* PBXTargetDependency */,
+			);
+			name = RiftRaiderUITests;
+			productName = RiftRaiderUITests;
+			productReference = 384753B023AC0A2E004D36FE /* RiftRaiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3847538423AC0A2C004D36FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Deirdre Saoirse Moen";
+				TargetAttributes = {
+					3847538B23AC0A2C004D36FE = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					384753A423AC0A2E004D36FE = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 3847538B23AC0A2C004D36FE;
+					};
+					384753AF23AC0A2E004D36FE = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 3847538B23AC0A2C004D36FE;
+					};
+				};
+			};
+			buildConfigurationList = 3847538723AC0A2C004D36FE /* Build configuration list for PBXProject "RiftRaider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3847538323AC0A2C004D36FE;
+			productRefGroup = 3847538D23AC0A2C004D36FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3847538B23AC0A2C004D36FE /* RiftRaider */,
+				384753A423AC0A2E004D36FE /* RiftRaiderTests */,
+				384753AF23AC0A2E004D36FE /* RiftRaiderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3847538A23AC0A2C004D36FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3847539F23AC0A2E004D36FE /* LaunchScreen.storyboard in Resources */,
+				3847539C23AC0A2E004D36FE /* Preview Assets.xcassets in Resources */,
+				3847539923AC0A2E004D36FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384753A323AC0A2E004D36FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384753AE23AC0A2E004D36FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3847538823AC0A2C004D36FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3847539523AC0A2D004D36FE /* RiftRaider.xcdatamodeld in Sources */,
+				3847539023AC0A2D004D36FE /* AppDelegate.swift in Sources */,
+				3847539723AC0A2D004D36FE /* ContentView.swift in Sources */,
+				3847539223AC0A2D004D36FE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384753A123AC0A2E004D36FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384753AA23AC0A2E004D36FE /* RiftRaiderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384753AC23AC0A2E004D36FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384753B523AC0A2E004D36FE /* RiftRaiderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		384753A723AC0A2E004D36FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3847538B23AC0A2C004D36FE /* RiftRaider */;
+			targetProxy = 384753A623AC0A2E004D36FE /* PBXContainerItemProxy */;
+		};
+		384753B223AC0A2E004D36FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3847538B23AC0A2C004D36FE /* RiftRaider */;
+			targetProxy = 384753B123AC0A2E004D36FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3847539D23AC0A2E004D36FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3847539E23AC0A2E004D36FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		384753B723AC0A2E004D36FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		384753B823AC0A2E004D36FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		384753BA23AC0A2E004D36FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RiftRaider/Preview Content\"";
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RiftRaider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.RiftRaider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		384753BB23AC0A2E004D36FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RiftRaider/Preview Content\"";
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RiftRaider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.RiftRaider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		384753BD23AC0A2E004D36FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = RiftRaiderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.RiftRaiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiftRaider.app/RiftRaider";
+			};
+			name = Debug;
+		};
+		384753BE23AC0A2E004D36FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = RiftRaiderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.RiftRaiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiftRaider.app/RiftRaider";
+			};
+			name = Release;
+		};
+		384753C023AC0A2E004D36FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = RiftRaiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.RiftRaiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiftRaider;
+			};
+			name = Debug;
+		};
+		384753C123AC0A2E004D36FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = RiftRaiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.RiftRaiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiftRaider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3847538723AC0A2C004D36FE /* Build configuration list for PBXProject "RiftRaider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384753B723AC0A2E004D36FE /* Debug */,
+				384753B823AC0A2E004D36FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384753B923AC0A2E004D36FE /* Build configuration list for PBXNativeTarget "RiftRaider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384753BA23AC0A2E004D36FE /* Debug */,
+				384753BB23AC0A2E004D36FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384753BC23AC0A2E004D36FE /* Build configuration list for PBXNativeTarget "RiftRaiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384753BD23AC0A2E004D36FE /* Debug */,
+				384753BE23AC0A2E004D36FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384753BF23AC0A2E004D36FE /* Build configuration list for PBXNativeTarget "RiftRaiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384753C023AC0A2E004D36FE /* Debug */,
+				384753C123AC0A2E004D36FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3847539323AC0A2D004D36FE /* RiftRaider.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3847539423AC0A2D004D36FE /* RiftRaider.xcdatamodel */,
+			);
+			currentVersion = 3847539423AC0A2D004D36FE /* RiftRaider.xcdatamodel */;
+			path = RiftRaider.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3847538423AC0A2C004D36FE /* Project object */;
+}
