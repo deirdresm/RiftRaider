@@ -51,6 +51,7 @@
 		384753B023AC0A2E004D36FE /* RiftRaiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiftRaiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		384753B423AC0A2E004D36FE /* RiftRaiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiftRaiderUITests.swift; sourceTree = "<group>"; };
 		384753B623AC0A2E004D36FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384753C223AC0A9C004D36FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		3847538323AC0A2C004D36FE = {
 			isa = PBXGroup;
 			children = (
+				384753C223AC0A9C004D36FE /* README.md */,
 				3847538E23AC0A2C004D36FE /* RiftRaider */,
 				384753A823AC0A2E004D36FE /* RiftRaiderTests */,
 				384753B323AC0A2E004D36FE /* RiftRaiderUITests */,
