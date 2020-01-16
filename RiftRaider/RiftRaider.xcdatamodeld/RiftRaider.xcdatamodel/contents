@@ -1,4 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BestiaryBuilding" representedClassName="BestiaryBuilding" syncable="YES" codeGenerationType="class">
+        <attribute name="affected_stat" optional="YES" attributeType="String"/>
+        <attribute name="area" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+        <attribute name="com2us_id" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="description" optional="YES" attributeType="String"/>
+        <attribute name="element" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="icon_filename" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="max_level" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="stat_bonus" optional="YES" attributeType="Transformable" customClassName="[Integer]"/>
+        <attribute name="upgrade_cost" optional="YES" attributeType="Transformable" customClassName="[Integer]"/>
+    </entity>
+    <entity name="BestiaryCraftmaterial" representedClassName="BestiaryCraftmaterial" syncable="YES" codeGenerationType="class">
+        <attribute name="com2us_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="icon_filename" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="sell_value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="BestiaryCraftmaterialSource" representedClassName="BestiaryCraftmaterialSource" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="source_id" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <relationship name="craftmaterial_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BestiaryCraftmaterial"/>
+    </entity>
+    <entity name="BestiaryDungeon" representedClassName="BestiaryDungeon" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="Integer 16"/>
+        <attribute name="enabled" optional="YES" attributeType="String"/>
+        <attribute name="icon_filename" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="slug" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="BestiaryFusion" representedClassName="BestiaryFusion" syncable="YES" codeGenerationType="class">
+        <attribute name="cost" optional="YES" attributeType="Integer 32" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="meta_order" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+        <attribute name="product_id" optional="YES" attributeType="Integer 32" usesScalarValueType="NO"/>
+        <attribute name="stars" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryFusionIngredients" representedClassName="BestiaryFusionIngredients" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="fusion_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BestiaryFusion"/>
+        <relationship name="monster_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BestiaryMonster"/>
+    </entity>
+    <entity name="BestiaryGameitem" representedClassName="BestiaryGameitem" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="Integer 16"/>
+        <attribute name="com2us_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="description" optional="YES" attributeType="String"/>
+        <attribute name="icon_filename" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="sell_value" optional="YES" attributeType="Integer 32"/>
+        <attribute name="slug" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="BestiaryHomunculousskill" representedClassName="BestiaryHomunculousskill" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="mana_cost" optional="YES" attributeType="Integer 32" usesScalarValueType="NO"/>
+        <attribute name="skill_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryHomunculousskillMonster" representedClassName="BestiaryHomunculousskillMonster" syncable="YES" codeGenerationType="class">
+        <attribute name="homunculusskill_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="monster_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryHomunculousskillPrerequisite" representedClassName="BestiaryHomunculousskillPrerequisite" syncable="YES" codeGenerationType="class">
+        <attribute name="homunculusskill_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="skill_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryHomunculousskillcraftcost" representedClassName="BestiaryHomunculousskillcraftcost" syncable="YES" codeGenerationType="class">
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="skill_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="craft_id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryLeaderskill" representedClassName="BestiaryLeaderskill" syncable="YES" codeGenerationType="class">
+        <attribute name="com2us_id" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryLevel" representedClassName="BestiaryLevel" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="floor" optional="YES" attributeType="Integer 16" usesScalarValueType="NO"/>
+        <attribute name="difficulty" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="energy_cost" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="xp" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="frontline_slots" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="backline_slots" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <relationship name="dungeon_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BestiaryDungeon"/>
+        <attribute name="total_slots" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BestiaryMonster" representedClassName="BestiaryMonster" syncable="YES" codeGenerationType="class">
+        <attribute name="com2us_id" optional="YES" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="BestiaryBuilding" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="BestiaryCraftmaterial" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="BestiaryCraftmaterialSource" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="BestiaryDungeon" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="BestiaryFusion" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="BestiaryFusionIngredients" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="BestiaryGameitem" positionX="-45" positionY="63" width="128" height="118"/>
+        <element name="BestiaryHomunculousskill" positionX="-45" positionY="63" width="128" height="118"/>
+        <element name="BestiaryHomunculousskillMonster" positionX="-45" positionY="63" width="128" height="118"/>
+        <element name="BestiaryHomunculousskillPrerequisite" positionX="-45" positionY="63" width="128" height="118"/>
+        <element name="BestiaryHomunculousskillcraftcost" positionX="-45" positionY="63" width="128" height="118"/>
+        <element name="BestiaryLeaderskill" positionX="-54" positionY="0" width="128" height="58"/>
+        <element name="BestiaryLevel" positionX="-54" positionY="0" width="128" height="58"/>
+        <element name="BestiaryMonster" positionX="-36" positionY="18" width="128" height="193"/>
+    </elements>
 </model>

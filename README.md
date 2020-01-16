@@ -25,13 +25,53 @@ Please hold, this will take me a few minutes. ;)
 
 ## Database Tables
 
-This uses some database tables from [Swarfarm](https://github.com/PeteAndersen/swarfarm) to calculate raid mechanics. There are 101 (!) tables in the default setup of that app, so I have only imported the ones that are relevant here.
+This uses some database tables from [Swarfarm](https://github.com/PeteAndersen/swarfarm) to calculate raid mechanics. There are 101 (!) tables in the default setup of that app, but I've only imported the ones that aren't swarfarm-specific.
 
-1. bestiary_building: these are the buildings that affect combat.
-2. bestiary_leaderskill: leader skills.
-3. bestiary_monster: that's our guys.
-4. bestiary_monster_skills: …and the skills they have, a many-to-many join table.
-5. bestiary_skill: the skill list that the many-to-many joins to.
+### General Info
+
+1. BestiaryBuilding: these are the buildings that affect combat.
+2. BestiaryLeaderskill: leader skills.
+3. BestiaryMonster: this is the monster definitions (not the instances of the monsters we have).
+4. BestiaryMonsterSkills: …and the skills they have, a many-to-many join table.
+5. BestiarySkill: the skill list that the many-to-many joins to.
+6. BestiarySkillScalingStats: …and how much they bump up with each skillup.
+7. BestiarySkillSkillEffect: join table from skills to skill effects.
+8. BestiarySkilleffect: the skill effects.
+9. BestiarySkilleffectdetail: detail about said effects.
+10. BestiaryHomunculousskill: Homunculus has skills.
+11. BestiaryHomunculousskillMonster
+12. BestiaryHomunculousskillPrerequisite
+13. BestiaryHomunculousskillcraftcost
+
+Not needed for this app, but included because I'm likely to use the data model elsewhere and might as well just do the work now:
+
+1. BestiaryCraftmaterial: what you make stuff out of.
+2. BestiaryCraftmaterialSource: and where you get said stuff from.
+3. BestiaryDungeon: some of the places to get things from (e.g., Giants, essence dungeons).
+4. BestiaryFusion: how to fuse one monster.
+5. BestiaryFusionIngredients: …and what you need in order to do so.
+6. BestiaryGameitem: Crystals, essences, $€.
+
+
+### Specific to the Player
+
+1. HerdersBuildinginstance:
+2. HerdersMonsterinstance:
+3. HerdersMonsterpiece: not-yet-assembled summons
+4. HerdersRuneinstance:
+5. HerdersStorage: how much essence, etc. we have
+6. HerdersSummoner: the summoner is the player
+7. HerdersTeam: a specific team
+8. HerdersTeamRoster: members of that team
+9. HerdersTeamgroup: what groups of teams they have, e.g., raid 5 teams
+
+## Tables to figure out
+
+* Guild buffs as there are no guild tables per se.
+
+## data_Log tables
+
+Haven't decided whether or not to add the necessary ones, but I may need to.
 
 # TODO: finish table list.
 
